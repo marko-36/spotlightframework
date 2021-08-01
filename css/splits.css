@@ -1,0 +1,11 @@
+﻿@media (min-width:1058px) {
+    /* _split-2 2021-06-20 */
+    ._split-2{display:inline-block;width:50%;margin-top:.5rem; vertical-align:top}
+    ._split-2:nth-of-type(2n+1){width:49%}
+    ._split-2 p{/*! display:inline-block; *//*! width:52%; */margin-top:.5rem; vertical-align:top}
+
+    /* _split-3 2021-06-20 */
+    ._split-3{display:inline-block;width:33%;margin-top:.5rem; vertical-align:top}
+    ._split-3:nth-of-type(3n+1){width:32%}
+    ._split-3 p{/*! display:inline-block; *//*! width:52%; */margin-top:.5rem; vertical-align:top}  
+}

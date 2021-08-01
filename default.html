@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <script> 
+        window.inputMode = `touch`;
+        window.mousemovecount = 0;
+        window.permanentDetection = true;
+        window.preventSimMousemove = false;
+
+        removeInputModeListeners = () => {
+            document.removeEventListener('touchstart', setInputModeT)
+            document.removeEventListener('touchmove', setInputModeT)
+            document.removeEventListener('mousemove', addMouseMoves)
+            document.removeEventListener('mousedown', () => { window.mousemovecount = 0 })
+            document.removeEventListener('click', () => { window.preventSimMousemove = false })
+        }
+
+        setInputModeT = () => {
+            window.inputMode = 'touch';
+            window.preventSimMousemove = true;
+            document.getElementsByTagName('BODY')[0].classList.add('_inputTouch')
+            document.getElementsByTagName('BODY')[0].classList.remove('_inputMouse')
+            console.log('inputMode: touch')
+            if (!window.permanentDetection) { removeInputModeListeners() }
+        }
+
+        addMouseMoves = () => {
+            if (!window.preventSimMousemove) {
+                window.mousemovecount++;
+                if (window.mousemovecount > 1) {
+                    window.inputMode = 'mouse';
+                    document.getElementsByTagName('BODY')[0].classList.add('_inputMouse')
+                    document.getElementsByTagName('BODY')[0].classList.remove('_inputTouch')
+                    console.log('inputMode: mouse')
+                    if (!window.permanentDetection) { removeInputModeListeners() }
+                }
+            }
+        }
+
+        document.addEventListener('touchstart', setInputModeT)
+        document.addEventListener('touchmove', setInputModeT)
+        document.addEventListener('mousemove', addMouseMoves)
+        document.addEventListener('mousedown', () => { window.mousemovecount = 0 })
+        document.addEventListener('click', () => { window.preventSimMousemove = false })
+    </script>
+    <title>Lorem Ipsum on Spotlight Framework</title>
+
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400&amp;subset=latin-ext" rel="stylesheet" /> <!--rel="preload" as="font"-->
+    <title>Lorem Ipsum | Since 15th century</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" />    
+
+    <link href="/css/_c-1.css" rel="stylesheet" media="(max-width:1057px)" />
+    <link href="/css/_c-2.css" rel="stylesheet" media="(max-width:1057px)" />
+    <link href="/css/_d-1.css" rel="stylesheet" media="(min-width:1058px)" />
+    <link href="/css/_d-2.css" rel="stylesheet" media="(min-width:1058px)" />
+    <link href="/css/_images.css" rel="stylesheet" />  
+  
+    <link href="/css/aside.css" rel="stylesheet" />
+    <!--link href="/css/collapsible_table.css" rel="stylesheet" /-->
+    <!--link href="/css/modals.css" rel="stylesheet" /!-->
+    <link href="/css/splits.css" rel="stylesheet" />
+    <link href="/css/dnimgonly.css" rel="stylesheet" />
+    
+    <style>
+        @font-face {
+            font-family: 'Neue';
+            src: url('/fonts/f.woff2') format('woff2'), url('/fonts/f.woff') format('woff')
+        }
+    </style>
+</head>
+
+<body id="_ndefault" class="">
+    <a id="_top"></a>
+    <div id='_modaloverlay'></div>
+
+    <!--header ></header-->
+    <nav>
+        <ul id="nav_user">
+            <li><a href="https://github.com/marko-36/spotlightframework">Spotlight Framework</a></li>
+            <li><a class="_asignup" data-modalshowid="_modal-signup">Sign up</a></li>
+            <li><a class="_alogin" data-modalshowid="_modal-login">Log In</a></li>
+            <li><a class="_amenu"></a></li>
+        </ul>
+        <ul id="nav_main">
+            <li class="_node"><a href="javascript:void(0);">Lorem Ipsum</a>
+                <ul>
+                    <li class="_history-purpose-usage"><a href="/#_history-purpose-usage">History, Purpose and Usage</a></li>                
+                    <li class="_origins-and-discovery"><a href="/#_origins-and-discovery">Origins and Discovery</a></li>
+                    <li class="_hedonist-roots"><a href="/#_hedonist-roots">Hedonist Roots</a></li>
+                    <li class="_assorted_philosophers"><a href="/#_assorted_philosophers">Assorted philosophers</a></li>
+                    <li class="_fuzzy-beginnings"><a href="/#_fuzzy-beginnings">Fuzzy Beginnings</a></li>
+                    <li class="_meaning-of-lorem-ipsum"><a href="/#_meaning-of-lorem-ipsum">Meaning of Lorem Ipsum</a></li>
+                    <li class="_usage-and-examples"><a href="/#_usage-and-examples">Usage and Examples</a></li>
+                    <li class="_controversy-in-the-design-world"><a href="/#_controversy-in-the-design-world">Controversy in the Design World</a> </li>
+                </ul>
+            </li>
+            <li class="_spotlight"><a href="https://github.com/marko-36/spotlightframework">Spotlight framework</a></li>
+            <li class="_contact-us"><a href="https://netwell.digital/">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="_dn"><!--_history-purpose-usage-->
+            <div>
+                <a id="_history-purpose-usage"></a>
+                <h2>History, Purpose and Usage</h2>
+                <p><b class="_bigtext">Lorem ipsum, or lipsum</b> as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book.</p>
+                <p>The purpose of lorem ipsum is to create a natural looking block of text (sentence, paragraph, page, etc.) that doesn't distract from the layout. A practice not without controversy, laying out pages with meaningless filler text can be very useful when the focus is meant to be on design, not content. </p>
+            </div>
+        </div>
+        <div class="_dn"><!--_origins-and-discovery-->
+            <div>            
+                <a id="_origins-and-discovery"></a>
+                <h2>Origins and Discovery</h2>
+                <p>Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text. “It's not Latin, though it looks like it, and it actually says nothing,” <b class="bigtext"></b>Before & After magazine</b> answered a curious reader, “Its ‘words’ loosely approximate the frequency with which letters occur in English, which is why at a glance it looks pretty real.”.&nbsp;;)</p>
+            </div>
+        </div>
+        <div class="_dn"><!--_hedonist-roots-->
+            <a id="_hedonist-roots"></a>            
+            <div>
+                <h2>Hedonist Roots</h2>
+                <p>The placeholder text, beginning with the line “Lorem ipsum dolor sit amet, consectetur adipiscing elit”, looks like Latin because in its youth, centuries ago, it was Latin. </p>
+                <p>Richard McClintock, a Latin scholar from Hampden-Sydney College, is credited with discovering the source behind the ubiquitous filler text. In seeing a sample of lorem ipsum, his interest was piqued by consectetur—a genuine, albeit rare, Latin word. Consulting a Latin dictionary led McClintock to a passage from De Finibus Bonorum et Malorum (“On the Extremes of Good and Evil”), a first-century B.C. text from the Roman philosopher Cicero.</p>
+            </div>
+        </div>
+        <div class="_dn">
+            <div class="imgonly">
+                <img src="/media/natalia-y-f5xddISq428-unsplash.jpg" width="758" height="299" alt="natalia-y-f5xddISq428-unsplash" />
+            </div>
+        </div>
+        <div class="_dn"><!--_assorted_philosophers-->
+            <div>
+                <a id="_assorted_philosophers"></a>
+                <h2>Assorted Philosophers</h2>
+            </div>
+            <div>      
+                <div class="_split-2">
+                    <ul>
+                        <li>Aeschines of Neapolis</li>
+                        <li>Bernard of Clairvaux</li>
+                        <li>Cassius Longinus</li>
+                        <li>Diogenes of Babylon</li>
+                        <li>Elisabeth of Bohemia</li>
+                        <li>Francis of Meyronnes</li>
+                        <li>Gaius the Platonist</li>
+                    </ul>
+                </div>
+                <div class="_split-2">
+                    <ul>
+                        <li>Heraclides Ponticus</li>
+                        <li>Isocrates</li>
+                        <li>John of Salisbury</li>
+                        <li>Karl Kautsky</li>
+                        <li>Leopold Kronecker</li>
+                        <li>Metrodorus of Athens</li>
+                        <li>Numenius of Apamea</li>
+                    </ul>
+                </div>
+                <div class="_split-3">
+                    <ul>
+                        <li>Oenomaus of Gadara</li>
+                        <li>Peregrinus Proteus</li>
+                        <li>Qutb al-Rahim</li>
+                        <li>Ramakrishna Paramhansa</li>
+                    </ul>
+                </div>
+                <div class="_split-3">
+                    <ul>                        
+                        <li>Slavoj Žižek</li>
+                        <li>Thomas Reid</li>
+                        <li>Ulrich of Strasbourg</li>
+                        <li>Valentin Voloshinov</li>
+                    </ul>
+                </div>
+                <div class="_split-3">
+                    <ul>                        
+                        <li>William of Auxerre</li>
+                        <li>Xenophanes of Colophon</li>
+                        <li>Yang Chu</li>
+                        <li>Zeno of Sidon</li>
+                    </ul>
+                </div>                        
+            </div>
+        </div>
+        <div class="_dn"><!--_fuzzy-beginnings-->
+            <div>
+                <a id="_fuzzy-beginnings"></a>
+                <h2>Meaning of Lorem Ipsum</h2>
+                <p><img class="bordered" src="/media/alex-block-PdDBTrkGYLo-unsplash.jpg" alt="alex-block-PdDBTrkGYLo-unsplash" width="756" height="242"></p>
+            </div>
+        </div>
+        <div class="_dn"><!--_meaning-of-lorem-ipsum-->
+            <div>
+                <a id="_meaning-of-lorem-ipsum"></a>
+                <h2>Meaning of Lorem Ipsum</h2>
+
+            </div>
+        </div>
+        <div class="_dn"><!--_usage-and-examples-->
+            <div>
+                <a id="_usage-and-examples"></a>
+                <h2>Usage and examples</h2>
+            </div>
+        </div>
+        <div class="_dn"><!--_controversy-in-the-design-world-->
+            <div>
+                <a id="_controversy-in-the-design-world"></a>
+                <h2>Controversy in the design world</h2>
+            </div>
+        </div>             
+        <aside>
+            <div id="_asidecon">
+                <div>
+                    <h4><span>Share:</span></h4>
+                    <div class="_addthisbox">
+                        <div class="addthis_inline_share_toolbox"></div>
+                    </div>
+                    <h4><span>Like & Follow:</span></h4>
+                    <div class="_likefollow"></div>
+                </div>
+            </div>
+        </aside>
+    </main>
+    <footer>
+        <div>© 2006 - 2021 netwell.digital<br /></div>
+    </footer>
+
+    <!--add-on: slfw-modals _modal-signup-->     
+    <!--add-on: slfw-modals _modal-login-->
+    <!--add-on: slfw-modals _modal-my-account-->      
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/js/core.js"></script>
+    <!--script src="/js/modals.js"></script-->
+</body>
+</html>

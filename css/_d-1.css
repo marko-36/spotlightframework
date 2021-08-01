@@ -1,0 +1,95 @@
+/*D-desktop MAIN 1-base*/
+
+*{position:relative;box-sizing:border-box;background-repeat:no-repeat;outline:none}*:focus{outline:none}
+body{z-index:2;font-family:sans-serif;color:#555;letter-spacing:-0.6px;line-height:1.625rem;font-size:1.125rem;background-color:#fff}
+._dn>*,._dt>*,header>*,footer>*,#nav_user,#nav_main,#_cooki-con p{position:relative;margin:0 auto 0 -32.5rem;width:65rem;left:50%;padding:0 .5rem 2rem;}
+
+
+
+header{display:block;position:fixed;z-index:70;top:0;height:2.5rem;width:100%;background-color:#ddd;}
+header>*{height:100%;text-align:right}
+header>div>*{display:inline-block;vertical-align:top;height:100%;border:0}
+footer{padding:1rem;font-size:1rem;background-color:#000}
+
+h1,h2,h3,h4,header,nav,select,a[id^="lbtn_"],.lbtn{font-weight:normal;letter-spacing:-1px;color:#000}
+h1{padding:2rem 0 .25rem;font-size:2.75rem;line-height:2.75rem}
+h2{padding:2rem 0 .25rem;font-size:2rem;width:auto !important/*;white-space:nowrap*/}
+h3,h4,cite{padding:2rem 0 0;font-size:1.75rem}
+h4{font-size:1.375rem;color:#666;letter-spacing:-0.8px;padding:1rem 0 0}
+main>div p,main>div ul,table{margin-top:.5rem}
+
+br.mbr{display: none}
+
+a,.lbtn{cursor:pointer;color:#000}
+a[id^="lbtn_"],.lbtn{text-decoration:none}
+
+
+input{font-size:.75rem}
+input[type="checkbox"]{width:auto}
+table{background-color:#eee}
+
+td,th{font-size:.875rem;border-right:1px solid #fff;padding:3px;border-bottom:1px solid #fff}
+th{background:#555;color:#fff;text-align:center}
+
+ul{list-style:inside;padding:0}
+ol{list-style:inside decimal}
+.bordered{border:solid 1px;box-sizing:content-box}
+
+
+
+
+main{display:block;position:relative;padding-top:9.5rem}
+main li{padding-left:1rem;margin:.25rem .5rem 0;background-size:.625rem;background-position:0 .5rem}
+
+nav{display:block;position:fixed;z-index:70;top:2.5rem !important;width:100%;font-size:1.25rem;background:#000}
+
+nav a,nav b{display:block;color:#fff;font-weight:normal;text-decoration:none}
+
+#nav_user{text-align:right;padding:0;height:3.5rem;margin-top:1rem;visibility:hidden;  /*display:inline-block kvůli přetékání LI do druhého UL, pokud v 2a.css nechci na řádku 77 overflow:hidden*/}
+#nav_user li{display:inline-block;position:relative;white-space:nowrap;height:100%;vertical-align:top}
+#nav_user li:nth-of-type(1){float:left;width:13rem;vertical-align:bottom;bottom:0;position:relative;height:4.5rem}/*width nastavit podle šířky loga*/
+#nav_user li:nth-of-type(1) a{width:100%;color:rgba(0,0,0,0) !important;} /*posunout pdolů před login?*/
+#nav_user a{padding:.8rem 1.5rem 0;height:100%}
+#nav_user a[class^="_a"]{display:inline-block;cursor:pointer;overflow:hidden;padding:1.5rem 3rem 0 .5rem}/*overflow odstraňuje problém s no-wrap*/
+
+
+
+#nav_main{padding:0;height:2.5rem;font-size:1.5rem;text-align:right}
+#nav_main ul{position:absolute;right:100%;display:none;padding:0;background-color:#000}
+
+#nav_main li{position:relative;display:block;vertical-align:top}
+#nav_main>li{display:inline-block;height:100%} /*2nd levels*/
+
+
+    /*-- nav_main desktop horizontal ONE-ROW/two-row       #nav_main>li:nth-of-type(1){width:0}*/
+    /*-- nav_main desktop horizontal one-row/TWO-ROW       #nav_main>li:nth-of-type(1){}*/
+
+#nav_main li.navhover>ul{display:block}
+
+#nav_main a{display:block;white-space:nowrap;padding:.5rem .375rem .5rem .5rem;height:100%}
+#nav_main li._node>a{cursor:default}
+
+    
+
+
+
+
+
+/*nav-top*/
+#nav_main>li>a{padding:.3rem 0 .3rem 1rem}
+
+
+    /*-- nav rollout right (all) --*/
+#nav_main>li ul{left:0;right:auto;text-align:left;min-width:100%}
+#nav_main>li ul ul{margin-left:100%;left:0;right:auto}
+
+#nav_main>li ul a{padding:.5rem .5rem .5rem .375rem}
+
+
+    /*-- nav_main desktop horizontal rightmost rollout to left --*/
+#nav_main>li:last-of-type ul{right:0;left:auto;text-align:left}
+#nav_main>li:last-of-type ul ul{margin-right:100%;right:0}
+
+
+
+/*#nav_main>li:last-of-type ul a[href^="j"]>b{}*/

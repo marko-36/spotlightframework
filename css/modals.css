@@ -1,0 +1,31 @@
+    ._modal h2{padding:0 0 .25rem}
+    ._modal h4{font-size:1.5rem;padding:0 0 .5rem;text-transform:uppercase}
+    a[data-modalswapid]::after{content:">>"}
+    a[data-modalswapid]::after{content:""}
+    ._modal-hide::after{content:"X"}
+    ._modal-hide::after{content:""}
+    #_modaloverlay{display:block;position:fixed;top:-3px;width:0;height:0;z-index:95;overflow:hidden;background:#eee;opacity:0}
+    body._hasmodal #_modaloverlay{opacity:.95;width:100%;height:101%}
+
+    ._modal{transition:top 150ms ease 0s, opacity 150ms ease 0s, max-height 0s ease 150ms, width 0s ease 150ms}
+    ._modal-active{transition:top 150ms ease 0s, opacity 150ms ease 0s, max-height 0s ease 0s, width 0s ease 0s}
+    #_modaloverlay{transition:opacity 150ms ease 0s, height 0s ease 150ms, width 0s ease 150ms}
+    body._hasmodal #_modaloverlay{transition:opacity 150ms ease 0s, height 0s ease 0s, width 0s ease 0s}
+
+@media (min-width:1058px) {
+    /*A-mobile MODALS 1-base 2021-06-20 --*/
+    a[data-modalswapid]{padding-right: 1.25rem;background-size:1rem;background-position:right .125rem}
+    ._modal-hide{position:absolute;top:-3.25rem;right:-.75rem;padding:1.5rem;background-size:1.5rem;background-position:center;content:"X"}
+    ._modal{position:fixed;opacity:0;z-index:96;overflow:hidden;width:0;top:15%;left:5%;max-height:0;box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.25);padding:10px;background-color:#fff;}
+    ._modal-active{opacity:1;top:10%;max-height:95%;overflow:initial;width:90%}
+    ._modal p{margin:0 0 1rem;line-height:1.5rem}
+}
+
+ @media (min-width:1058px) {
+    /*D-desktop MODALS 1-base 2021-06-20 --*/
+    a[data-modalswapid]{padding-right:1.375rem;background-size:1.25rem;background-position:right .025rem}
+    ._modal-hide{position:absolute;top:-2.5rem;right:-.75rem;padding:1.5rem;background-size:1.5rem;background-position:center;content:"X"}
+    ._modal{position:fixed;opacity:0;z-index:96;overflow:hidden;width:0;top:35%;left:50%;max-height:0;box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.25);padding:10px;margin-left:-11rem;background-color:#fff}
+    ._modal-active{opacity:1;top:30%;max-height:95%;overflow:initial;width:32rem}
+}
+

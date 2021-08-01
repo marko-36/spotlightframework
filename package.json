@@ -1,0 +1,19 @@
+{
+  "name": "spotlightframework",
+  "version": "0.1.0",
+  "description": "",
+  "main": "slfw.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marko-36/spotlightframework.git"
+  },
+  "author": "marko-36",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/marko-36/spotlightframework/issues"
+  },
+  "homepage": "https://github.com/marko-36/spotlightframework#readme"
+}
