@@ -56,6 +56,8 @@ body.navmain-active main{right:50%;opacity:.25}
 
 
 
+
+
 li._node > a::after {content:" \25E3 "}
 li._node.navhover > a::after {content:" \25E5 "}
 /*#nav_main>li:last-of-type{}*/
