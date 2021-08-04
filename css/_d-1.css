@@ -6,9 +6,7 @@ body{z-index:2;font-family:sans-serif;color:#555;letter-spacing:-0.6px;line-heig
 
 
 
-header{display:block;position:fixed;z-index:70;top:0;height:2.5rem;width:100%;background-color:#ddd;}
-header>*{height:100%;text-align:right}
-header>div>*{display:inline-block;vertical-align:top;height:100%;border:0}
+header{display:block;position:fixed;z-index:70;top:0;height:2.5rem;width:100%}
 footer{padding:1rem;font-size:1rem;background-color:#000}
 
 h1,h2,h3,h4,header,nav,select,a[id^="lbtn_"],.lbtn{font-weight:normal;letter-spacing:-1px;color:#000}

@@ -7,8 +7,6 @@ body{z-index:2;font-family:sans-serif;letter-spacing:-0.6px;line-height:1.625rem
 
 
 header{display:none}
-
-
 footer{padding:.5rem;background-color:#000}
 
 h1,h2,h3,h4,header,nav,select,a[id^="lbtn_"],.lbtn{font-weight:normal}

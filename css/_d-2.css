@@ -8,8 +8,6 @@ body{font-family:'Raleway';}
 
 header{background: rgba(150, 150, 150, 0.8);/* box-shadow: 0px 0px 12px 0px #000; *//* z-index: 99; */}
 
-header>div>*{background-color:#000;color:#bbb;font-size:1rem;background-size:1.625rem}
-
 
 h1,h2,h3,h4{font-family:'Neue'}
 h1{color:#ED1C24}
