@@ -9,7 +9,7 @@
 
         removeInputModeListeners = () => {
             document.removeEventListener('touchstart', setInputModeT)
-            document.removeEventListener('touchmove', setInputModeT)
+            //document.removeEventListener('touchmove', setInputModeT)
             document.removeEventListener('mousemove', addMouseMoves)
             document.removeEventListener('mousedown', () => { window.mousemovecount = 0 })
             document.removeEventListener('click', () => { window.preventSimMousemove = false })
@@ -38,7 +38,7 @@
         }
 
         document.addEventListener('touchstart', setInputModeT)
-        document.addEventListener('touchmove', setInputModeT)
+        //document.addEventListener('touchmove', setInputModeT)
         document.addEventListener('mousemove', addMouseMoves)
         document.addEventListener('mousedown', () => { window.mousemovecount = 0 })
         document.addEventListener('click', () => { window.preventSimMousemove = false })
@@ -48,7 +48,7 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-    <link href="https://fonts.googleapis.com/css?family=Raleway:400&amp;subset=latin-ext" rel="stylesheet" /> <!--rel="preload" as="font"-->
+    <!--link href="https://fonts.googleapis.com/css?family=Raleway:400&amp;subset=latin-ext" rel="stylesheet" /> <!--rel="preload" as="font"-->
     <title>Lorem Ipsum | Since 15th century</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" />    
 

@@ -55,7 +55,7 @@ nav a{font-size:1.25rem;padding:.75rem .75rem .75rem 0}
 #nav_main{float:right;z-index:70;overflow:hidden;opacity:1;max-width:0;margin-top:5rem;text-align:right;top:100%;/*min-height:100vh;*/transition:max-width cubic-bezier(.19,1,.22,1) .3s;background-color: rgba(255,255,255,.05);}
 #nav_main ul{height:0;overflow:hidden}
 #nav_main>ul{background:rgba(0,0,0,.9)}
-#nav_main li{background: rgba(150,150,150,.4)}
+#nav_main li{background: rgba(150,150,150,.4);width:95vw;}
 #nav_main ul li {padding-right: 20px}
 
 
