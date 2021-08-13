@@ -1,4 +1,4 @@
-﻿// var body = document.querySelector("body");
+﻿var body = document.querySelector("body");
 
 // body.navmain-active toggle 2021-06-06
 document.querySelector('a._amenu').addEventListener("click", menuToggle);
