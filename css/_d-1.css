@@ -40,7 +40,6 @@ main{display:block;position:relative;padding-top:9.5rem}
 main li{padding-left:1rem;margin:.25rem .5rem 0;background-size:.625rem;background-position:0 .5rem}
 
 nav{display:block;position:fixed;z-index:70;top:2.5rem !important;width:100%;font-size:1.25rem;background:#000}
-
 nav a,nav b{display:block;color:#fff;font-weight:normal;text-decoration:none}
 
 #nav_user{text-align:right;padding:0;height:3.5rem;margin-top:1rem;visibility:hidden;  /*display:inline-block kvůli přetékání LI do druhého UL, pokud v 2a.css nechci na řádku 77 overflow:hidden*/}

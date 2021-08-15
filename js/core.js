@@ -11,11 +11,13 @@ function menuToggle(ev) {"use strict";
 		document.querySelectorAll('li._node').forEach(menuNode => {
 			menuNode.classList.remove('navhover');
 		})
-		body.classList.remove('navmain-active');        			
+		body.classList.remove('navmain-active');
+		document.querySelector('nav').style.top = null;	
 		/*if($(window).scrollTop()>0){$('body').addClass('navmain-hidden');$('nav').css('top', '');}*/
 	} else {
 		body.classList.add('navmain-active');
 		/*$('nav').css('top', $(window).scrollTop());*/
+		document.querySelector('nav').style.top = window.pageYOffset + 'px';
 	}
 
 };
