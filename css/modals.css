@@ -17,15 +17,15 @@
     a[data-modalswapid]{padding-right: 1.25rem;background-size:1rem;background-position:right .125rem}
     ._modal-hide{position:absolute;top:-3.25rem;right:-.75rem;padding:1.5rem;background-size:1.5rem;background-position:center;content:"X"}
     ._modal{position:fixed;opacity:0;z-index:96;overflow:hidden;width:0;top:15%;left:5%;max-height:0;box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.25);padding:10px;background-color:#fff;}
-    ._modal-active{opacity:1;top:10%;max-height:95%;overflow:initial;width:90%}
+    ._modal-active{opacity:1;top:10%;max-height:95%;overflow:initial;width:50rem;left:calc(50% - 25rem)}
     ._modal p{margin:0 0 1rem;line-height:1.5rem}
 }
 
- @media (min-width:1058px) {
+ @media (max-width:1057px) {
     /*D-desktop MODALS 1-base 2021-06-20 --*/
     a[data-modalswapid]{padding-right:1.375rem;background-size:1.25rem;background-position:right .025rem}
     ._modal-hide{position:absolute;top:-2.5rem;right:-.75rem;padding:1.5rem;background-size:1.5rem;background-position:center;content:"X"}
     ._modal{position:fixed;opacity:0;z-index:96;overflow:hidden;width:0;top:35%;left:50%;max-height:0;box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.25);padding:10px;margin-left:-11rem;background-color:#fff}
-    ._modal-active{opacity:1;top:30%;max-height:95%;overflow:initial;width:32rem}
+    ._modal-active{opacity:1;top:30%;max-height:95%;overflow:initial;width:24rem;left:calc(50% - 12rem)}
 }
 

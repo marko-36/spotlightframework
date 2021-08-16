@@ -60,7 +60,7 @@
   
     <link href="/css/aside.css" rel="stylesheet" />
     <!--link href="/css/collapsible_table.css" rel="stylesheet" /-->
-    <!--link href="/css/modals.css" rel="stylesheet" /!-->
+    <link href="/css/modals.css" rel="stylesheet" />
     <link href="/css/splits.css" rel="stylesheet" />
     <link href="/css/dnimgonly.css" rel="stylesheet" />
     <link href="/css/nav-onscroll.css" rel="stylesheet" />
@@ -242,11 +242,45 @@
         <div>© 2006 - 2021 netwell.digital<br /></div>
     </footer>
 
-    <!--add-on: slfw-modals _modal-signup-->     
-    <!--add-on: slfw-modals _modal-login-->
-    <!--add-on: slfw-modals _modal-my-account-->      
+    <div id="_modal-signup" class="_modal">
+        <h2>Sign up</h2>
+        <p>Name / Nickname:
+            <br /><input type="text" maxlength="64" size="32" id="TB_signup_name1" />
+        </p>
+        <p>E-mail:
+            <br /><input type="text" maxlength="64" size="32" id="TB_signup_email" />
+        </p>
+        <p>Password:
+             <br /><input type="password" maxlength="16" size="32" id="TB_signup_pswd" />
+        </p>
+        <p><br><a id="lbtn_signup" class="_focusable" href="#">Sign up</a></p>
+        <p style="text-align:right"><a data-modalswapid="_modal-login">I have an account. Log in instead</a></p>
+        <a class="_modal-hide"></a>
+    </div>
+
+    <div id="_modal-login" class="_modal">
+        <h2>Log in</h2>
+        <p>E-mail:<br /><input type="text" maxlength="64" size="32" id="TB_login_email" /></p>
+        <p>Password:<br /><input type="password" maxlength="16" size="32" id="TB_login_pswd" /></p>
+        <p><input id="CHK_login_preserve" type="checkbox" /> Keep me logged in</p>
+        <p><a id="lbtn_login" class="_focusable" href="#">Log in</a></p>
+        <p style="text-align:right"><a data-modalswapid="_modal-signup">I don't have an account. Sign me up quick</a></p>
+        <a class="_modal-hide"></a>
+    </div>
+
+    <div id="_modal-my-account" class="_modal">
+        <h2>My account</h2>
+        <p><a href="#">Personal information</a></p>
+        <p><a href="#">Privacy, security, preferences</a></p>
+        <p style="text-align:right"><a id="lbtn_logout" href="#">Log out</a></p>
+        <a class="_modal-hide"></a>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <script src="/js/core.js"></script>
-    <!--script src="/js/modals.js"></script-->
+    <script src="/js/modals.js"></script>
 </body>
 </html>
