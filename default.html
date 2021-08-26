@@ -83,8 +83,8 @@
             <li><a href="https://github.com/marko-36/spotlightframework">Spotlight Framework</a></li>
             <li class="_asignup"><a data-modalshowid="_modal-signup">Sign up</a></li>
             <li class="_alogin"><a data-modalshowid="_modal-login">Log In</a></li>
-            <li class="_alogout"><a data-modalshowid="_modal-login">Log In</a></li>   
-            <li class="_auser"><a data-modalshowid="_modal-login">Log In</a></li>                    
+            <li class="_alogout"><a data-modalshowid="_modal-logout">Log Out</a></li>   
+            <li class="_auser"><a data-modalshowid="_modal-user">My Account</a></li>                    
             <li class="_amenu"><a></a></li>
         </ul>
         <ul id="nav_main">
@@ -270,7 +270,15 @@
         <a class="_modal-hide"></a>
     </div>
 
-    <div id="_modal-my-account" class="_modal">
+    <div id="_modal-logout" class="_modal">
+        <h2>Log out</h2>
+
+        <p><a id="lbtn_login" class="_focusable" href="#">Log in</a></p>
+        <p style="text-align:right"><a data-modalswapid="_modal-signup">I don't have an account. Sign me up quick</a></p>
+        <a class="_modal-hide"></a>
+    </div>
+
+    <div id="_modal-user" class="_modal">
         <h2>My account</h2>
         <p><a href="#">Personal information</a></p>
         <p><a href="#">Privacy, security, preferences</a></p>
