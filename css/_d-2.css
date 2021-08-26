@@ -19,7 +19,7 @@ h1{color:#ED1C24}
 
 
 
-a[id^="lbtn_"],.lbtn{background: #000; background-color: rgb(0, 0, 0); padding: .375rem .625rem; vertical-align: middle; font-size: 1.25rem; font-family: 'Neue'; letter-spacing: initial; top: -1px; box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.55); color: #eee;}
+a[id^="lbtn_"],.lbtn{background: #000; background-color: rgb(0, 0, 0); padding: .375rem .625rem; vertical-align: middle; font-size: 1rem; font-family: 'Neue'; letter-spacing: initial; top: -1px; box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.55); color: #eee;}
 a[id^="lbtn_"]:hover,.lbtn:hover{color: #fff;background-color: #333}
 b{font-weight:normal}
 input{border:0;/*! border-radius:3px; */background:#eee;padding:.25rem .5rem;vertical-align:middle;font-size:.75rem;font-family:'Raleway';letter-spacing: initial}
