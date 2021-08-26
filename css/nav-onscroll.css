@@ -1,2 +1,2 @@
 nav{transition:max-height cubic-bezier(.19,1,.22,1) .3s}
-body.scrolledDown:not(.navmain-active) nav{max-height:0}
+body.scrolledDown:not(._navmain-active) nav{max-height:0}

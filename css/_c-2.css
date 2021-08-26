@@ -38,7 +38,7 @@ ul{list-style:none}
 
 main{position:relative;padding-top:5rem;right:0;transition:right cubic-bezier(.19,1,.22,1) .3s,opacity cubic-bezier(.19,1,.22,1) .3s}
 
-body.navmain-active main{right:50%;opacity:.25}
+body._navmain-active main{right:50%;opacity:.25}
 
 
 

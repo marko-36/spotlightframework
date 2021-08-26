@@ -5,22 +5,22 @@ window.scrollTreshold = 10; //
 window.menuAutoHide = false;
 window.menuAutoClose = true; //
 
-// body.navmain-active toggle 2021-06-06
-document.querySelector('a._amenu').addEventListener("click", menuToggle);
+// body._navmain-active toggle 2021-06-06
+document.querySelector('li._amenu a').addEventListener("click", menuToggle);
 //body.addEventListener("click", menuToggle);
 
 function menuToggle(ev) {"use strict";
 	ev.preventDefault();
 	ev.stopImmediatePropagation();	
-	if (body.classList.contains('navmain-active')){
+	if (body.classList.contains('_navmain-active')){
 		document.querySelectorAll('li._node').forEach(menuNode => {
 			menuNode.classList.remove('navhover');
 		})
-		body.classList.remove('navmain-active');
+		body.classList.remove('_navmain-active');
 		document.querySelector('nav').style.top = null;	
-		/*if($(window).scrollTop()>0){$('body').addClass('navmain-hidden');$('nav').css('top', '');}*/
+		/*if($(window).scrollTop()>0){$('body').addClass('_navmain-hidden');$('nav').css('top', '');}*/
 	} else {
-		body.classList.add('navmain-active');
+		body.classList.add('_navmain-active');
 		/*$('nav').css('top', $(window).scrollTop());*/
 		document.querySelector('nav').style.top = window.pageYOffset + 'px';
 	}
@@ -37,9 +37,9 @@ document.querySelectorAll('li._node').forEach(menuNode => {
 function menuNodeToggle(ev) {
 	ev.preventDefault();
 	ev.stopImmediatePropagation();
-	if ((ev.currentTarget.classList.contains('navhover')) && ((window.inputMode == 'mouse' && !body.classList.contains('navmain-active') && ev.type == 'mouseout') || (ev.type == 'click'))) {
+	if ((ev.currentTarget.classList.contains('navhover')) && ((window.inputMode == 'mouse' && !body.classList.contains('_navmain-active') && ev.type == 'mouseout') || (ev.type == 'click'))) {
 		ev.currentTarget.classList.remove('navhover')
-	} else if ((window.inputMode == 'mouse' && !body.classList.contains('navmain-active') && ev.type == 'mouseover') || (ev.type == 'click')){
+	} else if ((window.inputMode == 'mouse' && !body.classList.contains('_navmain-active') && ev.type == 'mouseover') || (ev.type == 'click')){
 		var otherNodes = Array.prototype.slice.call(ev.currentTarget.parentNode.children);
 		otherNodes.forEach(node => {
 			node.classList.remove('navhover')
@@ -55,8 +55,8 @@ function htmlReset(){
 		menuNode.classList.remove('navhover');
 	})
 	body.classList.remove('_sided');
-	body.classList.remove('navmain-active'); 
-	//if($(window).scrollTop()>0){$('body').addClass('navmain-hidden').css('top', '');}
+	body.classList.remove('_navmain-active'); 
+	//if($(window).scrollTop()>0){$('body').addClass('_navmain-hidden').css('top', '');}
 };
 
 isBigScroll = (lastScrollTop, scrollTreshold) => {
@@ -82,7 +82,7 @@ isBigScroll = (lastScrollTop, scrollTreshold) => {
 		menuNode.classList.remove('navhover');
 	  })
 	  document.querySelector('nav').style.top = null;
-	  setTimeout(function(){ body.classList.remove('navmain-active');}, 310);
+	  setTimeout(function(){ body.classList.remove('_navmain-active');}, 310);
 	  body.classList.remove('scrolledDown')
   }
   
@@ -95,7 +95,7 @@ isBigScroll = (lastScrollTop, scrollTreshold) => {
 	if (isBigScroll(lastScrollTop, 10)) {
 	  setScrollDir(window.lastScrollTop);
   
-	  if (body.classList.contains('navmain-active') && window.menuAutoClose){
+	  if (body.classList.contains('_navmain-active') && window.menuAutoClose){
 		if (document.querySelector('nav').offsetTop + document.querySelector('nav').offsetHeight + document.querySelector('#nav_main').offsetTop + document.querySelector('#nav_main').offsetHeight < window.pageYOffset) {
 			resetNav(window.pageYOffset)
 		} 
