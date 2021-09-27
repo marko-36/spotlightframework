@@ -1,4 +1,4 @@
-/*A-mobile MAIN 1-base*/
+/*C-mobile MAIN 1-base*/
 
 *{position:relative;box-sizing:border-box;background-repeat:no-repeat;outline:none}*:focus{outline:none}
 body{z-index:2;font-family:sans-serif;letter-spacing:-0.6px;line-height:1.625rem;font-size:1.125rem;width:100vw;background-color:#fff;}
@@ -8,12 +8,11 @@ body{z-index:2;font-family:sans-serif;letter-spacing:-0.6px;line-height:1.625rem
 
 header{display:none}
 footer{padding:.5rem;background-color:#000}
-
+/* code divider 0 */
 h1,h2,h3,h4,header,nav,select,a[id^="lbtn_"],.lbtn{font-weight:normal}
 h1{margin:0 0 .5rem;font-size:2.75rem;line-height:2.75rem}
 h2{padding:1rem 0 .25rem;font-size:2rem;width:auto !important;}
 h3,h4,cite{padding:1rem 0 .25rem}
-
 
 
 br.dbr{display: none}
@@ -22,7 +21,7 @@ a,.lbtn{cursor:pointer;color:#000}
 a[id^="lbtn_"],.lbtn{text-decoration:none}
 
 
-/* code divider 1 */
+/* css placeholder 10 */
 input{font-size:1rem}
 input[type="checkbox"]{width:auto}
 table{background-color:#eee}
@@ -33,14 +32,15 @@ th{background:#555;color:#fff;text-align:center}
 ul{list-style:inside;padding:0}
 ol{list-style:inside decimal}
 .bordered{border:solid 1px;box-sizing:content-box}
-
+/* css placeholder 15 */
 
 
 
 main{display:block;top:-3px}
 main li{padding-left:1rem;margin:.25rem .5rem 0;background-size: .5rem;background-position: 0 .575rem;}
 
-/* code divider 2 */
+
+/* css placeholder 20 */
 nav{display:block;position:fixed;z-index:70;max-height:5rem;width:100vw;top:0;margin-top:-2px;background:#000}/* padding-bottom because of #nav_main shadow */
 nav a,nav b{display:block;color:#000;font-weight:normal;text-decoration:none}
 nav a{font-size:1.25rem;padding:.75rem 1.35rem .75rem 0}
@@ -56,12 +56,13 @@ body._loggedin #nav_user li._asignup,body._loggedin #nav_user li._alogin,#nav_us
 
 
 
-/* code divider 3 */
+/* css placeholder 30 */
 #nav_main{float:right;z-index:70;overflow:hidden;opacity:1;max-width:0;margin-top:5rem;text-align:right;top:100%;/*min-height:100vh;*/transition:max-width cubic-bezier(.19,1,.22,1) .3s;background-color: rgba(255,255,255,.05);}
 #nav_main ul{height:0;overflow:hidden}
 #nav_main>ul{background:rgba(0,0,0,.9)}
 #nav_main li{background: rgba(150,150,150,.4);width:95vw;}
 #nav_main ul li {padding-right: 20px}
+
 
 
 
@@ -76,3 +77,4 @@ body._loggedin #nav_user li._asignup,body._loggedin #nav_user li._alogin,#nav_us
 body._navmain-hidden nav{max-height:0%}
 body._navmain-active nav{position:absolute;/*max-height:100vh !important;height:100vh;overflow:visible*/}
 body._navmain-active #nav_main{width:95vw;max-width:95vw}
+/* css placeholder 40 */
