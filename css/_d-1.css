@@ -22,6 +22,7 @@ a,.lbtn{cursor:pointer;color:#000}
 a[id^="lbtn_"],.lbtn{text-decoration:none}
 
 
+/* code divider 1 */
 input{font-size:.75rem}
 input[type="checkbox"]{width:auto}
 table{background-color:#eee}
@@ -39,6 +40,7 @@ ol{list-style:inside decimal}
 main{display:block;position:relative;padding-top:9.5rem}
 main li{padding-left:1rem;margin:.25rem .5rem 0;background-size:.625rem;background-position:0 .5rem}
 
+/* code divider 2 */
 nav{display:block;position:fixed;z-index:70;top:2.5rem !important; max-height: 999px !important; width:100%;font-size:1.25rem;background:#000}
 nav a,nav b{display:block;color:#fff;font-weight:normal;text-decoration:none}
 
@@ -47,10 +49,14 @@ nav a,nav b{display:block;color:#fff;font-weight:normal;text-decoration:none}
 #nav_user li:nth-of-type(1){float:left;width:13rem;vertical-align:bottom;bottom:0;position:relative;height:4.5rem}/*width nastavit podle šířky loga*/
 #nav_user li:nth-of-type(1) a{width:100%;color:rgba(0,0,0,0) !important;} /*posunout pdolů před login?*/
 #nav_user a{padding:.8rem 1.5rem 0;height:100%}
-#nav_user a[class^="_a"]{display:inline-block;cursor:pointer;overflow:hidden;padding:1.5rem 3rem 0 .5rem}/*overflow odstraňuje problém s no-wrap*/
+#nav_user li[class^="_a"] a{display:inline-block;cursor:pointer;overflow:hidden;padding:1.5rem 3rem 0 .5rem}/*overflow odstraňuje problém s no-wrap*/
+
+#nav_user li._asignup,#nav_user li._alogin,body._loggedin #nav_user li._alogout,body._loggedin #nav_user li._auser{display:inline-block;}
+body._loggedin #nav_user li._asignup,body._loggedin #nav_user li._alogin,#nav_user li._alogout,#nav_user li._auser{display:none;}
 
 
 
+/* code divider 3 */
 #nav_main{padding:0;height:2.5rem;font-size:1.5rem;text-align:right}
 #nav_main ul{position:absolute;right:100%;display:none;padding:0;background-color:#000}
 

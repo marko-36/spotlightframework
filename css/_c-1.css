@@ -22,6 +22,7 @@ a,.lbtn{cursor:pointer;color:#000}
 a[id^="lbtn_"],.lbtn{text-decoration:none}
 
 
+/* code divider 1 */
 input{font-size:1rem}
 input[type="checkbox"]{width:auto}
 table{background-color:#eee}
@@ -39,6 +40,7 @@ ol{list-style:inside decimal}
 main{display:block;top:-3px}
 main li{padding-left:1rem;margin:.25rem .5rem 0;background-size: .5rem;background-position: 0 .575rem;}
 
+/* code divider 2 */
 nav{display:block;position:fixed;z-index:70;max-height:5rem;width:100vw;top:0;margin-top:-2px;background:#000}/* padding-bottom because of #nav_main shadow */
 nav a,nav b{display:block;color:#000;font-weight:normal;text-decoration:none}
 nav a{font-size:1.25rem;padding:.75rem 1.35rem .75rem 0}
@@ -50,8 +52,11 @@ nav a{font-size:1.25rem;padding:.75rem 1.35rem .75rem 0}
 #nav_user li[class^="_a"] a{display:inline-block;color:rgba(0,0,0,0);cursor:pointer;background-repeat:no-repeat;background-size:contain;background-position:center;overflow:hidden}/* overflow fixes issues with no-wrap */
 #nav_user li._alogout,#nav_user li._auser{max-width:0; display:none;}
 #nav_user li._asignup,#nav_user li._alogin,body._loggedin #nav_user li._alogout,body._loggedin #nav_user li._auser{max-width:2.15rem; display:inline-block;}
+body._loggedin #nav_user li._asignup,body._loggedin #nav_user li._alogin,#nav_user li._alogout,#nav_user li._auser{max-width:2.15rem; display:none;}
 
 
+
+/* code divider 3 */
 #nav_main{float:right;z-index:70;overflow:hidden;opacity:1;max-width:0;margin-top:5rem;text-align:right;top:100%;/*min-height:100vh;*/transition:max-width cubic-bezier(.19,1,.22,1) .3s;background-color: rgba(255,255,255,.05);}
 #nav_main ul{height:0;overflow:hidden}
 #nav_main>ul{background:rgba(0,0,0,.9)}
