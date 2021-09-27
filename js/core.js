@@ -2,7 +2,7 @@
 window.lastScrollDir = "up";
 window.lastScrollTop = window.pageYOffset;
 window.scrollTreshold = 10; //
-window.menuAutoHide = false;
+window.menuAutoHide = true;
 window.menuAutoClose = true; //
 
 // body._navmain-active toggle 2021-06-06
