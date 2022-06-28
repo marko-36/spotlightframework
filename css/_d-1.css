@@ -1,4 +1,5 @@
 /*D-desktop MAIN 1-base*/
+@media (min-width:1058px) {
 
 *{position:relative;box-sizing:border-box;background-repeat:no-repeat;outline:none}*:focus{outline:none}
 body{z-index:2;font-family:sans-serif;color:#555;letter-spacing:-0.6px;line-height:1.625rem;font-size:1.125rem;background-color:#fff}
@@ -98,3 +99,4 @@ body._loggedin #nav_user li._asignup,body._loggedin #nav_user li._alogin,#nav_us
 
 
 /*#nav_main>li:last-of-type ul a[href^="j"]>b{}*/
+

@@ -1,4 +1,5 @@
 /*C-mobile MAIN 1-base*/
+@media (max-width:1057px) {
 
 *{position:relative;box-sizing:border-box;background-repeat:no-repeat;outline:none}*:focus{outline:none}
 body{z-index:2;font-family:sans-serif;letter-spacing:-0.6px;line-height:1.625rem;font-size:1.125rem;width:100vw;background-color:#fff;}
@@ -78,3 +79,5 @@ body._navmain-hidden nav{max-height:0%}
 body._navmain-active nav{position:absolute;/*max-height:100vh !important;height:100vh;overflow:visible*/}
 body._navmain-active #nav_main{width:95vw;max-width:95vw}
 /* css placeholder 40 */
+
+}

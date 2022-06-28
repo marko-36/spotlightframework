@@ -1,4 +1,5 @@
 /*D-desktop MAIN 2-visual*/
+@media (min-width:1058px) {
 
 
 body{font-family:'Raleway';}
@@ -99,3 +100,4 @@ nav{font-family:'Neue'}
 #nav_main>li:last-of-type ul b{background-size:.75rem;background-position:left center;padding-left:1.25rem}	
 
 #nav_main:hover ._ispath{color:inherit}
+}

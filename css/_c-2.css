@@ -1,4 +1,5 @@
 /*C-mobile MAIN 2-visual*/
+@media (max-width:1057px) {
 
 
 body{font-family:'Raleway';color:#000}
@@ -79,3 +80,4 @@ li._node.navhover > a::after {content:" \25E5 "}
 
 /* css placeholder 40 */
 /*._ispath{background-color:#fff;color:#45b}*/
+}
