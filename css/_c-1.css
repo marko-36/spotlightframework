@@ -1,4 +1,4 @@
-/*C-mobile MAIN 1-base*/
+/*C-mobile MAIN 1-base https://github.com/marko-36/spotlightframework/wiki/Core-layout,-code-structure,-classes-IDs */
 @media (max-width:1057px) {
 
 *{position:relative;box-sizing:border-box;background-repeat:no-repeat;outline:none}*:focus{outline:none}
@@ -9,7 +9,7 @@ body{z-index:2;font-family:sans-serif;letter-spacing:-0.6px;line-height:1.625rem
 
 header{display:none}
 footer{padding:.5rem;background-color:#000}
-/* code divider 0 */
+/* css placeholder 0 */
 h1,h2,h3,h4,header,nav,select,a[id^="lbtn_"],.lbtn{font-weight:normal}
 h1{margin:0 0 .5rem;font-size:2.75rem;line-height:2.75rem}
 h2{padding:1rem 0 .25rem;font-size:2rem;width:auto !important;}

@@ -1,4 +1,4 @@
-/*C-mobile MAIN 2-visual*/
+/*C-mobile MAIN 2-visual https://github.com/marko-36/spotlightframework/wiki/Core-layout,-code-structure,-classes-IDs */
 @media (max-width:1057px) {
 
 
@@ -8,8 +8,8 @@ body{font-family:'Raleway';color:#000}
 ._dn:nth-child(2n+1){background-color:#ddd;} 
 
 
-
-/* code divider 0 */
+footer{color:#fff}
+/* css placeholder 00 */
 h1,h2,h3,h4{font-family:'Neue';color:#000}
 h1{color:#ED1C24}
 
