@@ -10,7 +10,7 @@ body{z-index:2;font-family:sans-serif;letter-spacing:-0.6px;line-height:1.625rem
 header{display:none}
 footer{padding:.5rem;background-color:#000}
 /* css placeholder 0 */
-h1,h2,h3,h4,header,nav,select,a[id^="lbtn_"],.lbtn{font-weight:normal}
+h1, .h1, h2, .h2, h3, .h3, h4, .h4,header,nav,select,a[id^="lbtn_"],.lbtn{font-weight:normal}
 h1{margin:0 0 .5rem;font-size:2.75rem;line-height:2.75rem}
 h2{padding:1rem 0 .25rem;font-size:2rem;width:auto !important;}
 h3,h4,cite{padding:1rem 0 .25rem}

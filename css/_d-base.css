@@ -10,7 +10,7 @@ body{z-index:2;font-family:sans-serif;color:#555;letter-spacing:-0.6px;line-heig
 header{display:block;position:fixed;z-index:70;top:0;height:2.5rem;width:100%}
 footer{padding:1rem;font-size:1rem;background-color:#000}
 /* code divider 0 */
-h1,h2,h3,h4,header,nav,select,a[id^="lbtn_"],.lbtn{font-weight:normal;letter-spacing:-1px;color:#000}
+h1, .h1, h2, .h2, h3, .h3, h4, .h4,header,nav,select,a[id^="lbtn_"],.lbtn{font-weight:normal;letter-spacing:-1px;color:#000}
 h1{padding:2rem 0 .25rem;font-size:2.75rem;line-height:2.75rem}
 h2{padding:2rem 0 .25rem;font-size:2rem;width:auto !important/*;white-space:nowrap*/}
 h3,h4,cite{padding:2rem 0 0;font-size:1.75rem}
@@ -33,14 +33,14 @@ th{background:#555;color:#fff;text-align:center}
 ul{list-style:inside;padding:0}
 ol{list-style:inside decimal}
 .bordered{border:solid 1px;box-sizing:content-box}
-
+.inlined>div,.inlined>span{display:inline-block}
 /* css placeholder 15 */
 
 
 
 main{display:block;position:relative;padding-top:9.5rem}
 main li{padding-left:1rem;margin:.25rem .5rem 0;background-size:.625rem;background-position:0 .5rem}
-main>div p,main>div ul,table{margin-top:.5rem}
+
 
 /* css placeholder 20 */
 nav{display:block;position:fixed;z-index:70;top:2.5rem !important; max-height: 999px !important; width:100%;font-size:1.25rem;background:#000}
