@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <script>
+        window.inputMode = `touch`;
+        window.mousemovecount = 0;
+        window.permanentDetection = true;
+        window.preventSimMousemove = false;
+
+        removeInputModeListeners = () => {
+            document.removeEventListener('touchstart', setInputModeT)
+            //document.removeEventListener('touchmove', setInputModeT)
+            document.removeEventListener('mousemove', addMouseMoves)
+            document.removeEventListener('mousedown', () => { window.mousemovecount = 0 })
+            document.removeEventListener('click', () => { window.preventSimMousemove = false })
+        }
+
+        setInputModeT = () => {
+            window.inputMode = 'touch';
+            window.preventSimMousemove = true;
+            document.getElementsByTagName('BODY')[0].classList.add('_inputTouch')
+            document.getElementsByTagName('BODY')[0].classList.remove('_inputMouse')
+            console.log('inputMode: touch')
+            if (!window.permanentDetection) { removeInputModeListeners() }
+        }
+
+        addMouseMoves = () => {
+            if (!window.preventSimMousemove) {
+                window.mousemovecount++;
+                if (window.mousemovecount > 1) {
+                    window.inputMode = 'mouse';
+                    document.getElementsByTagName('BODY')[0].classList.add('_inputMouse')
+                    document.getElementsByTagName('BODY')[0].classList.remove('_inputTouch')
+                    console.log('inputMode: mouse')
+                    if (!window.permanentDetection) { removeInputModeListeners() }
+                }
+            }
+        }
+
+        document.addEventListener('touchstart', setInputModeT)
+        //document.addEventListener('touchmove', setInputModeT)
+        document.addEventListener('mousemove', addMouseMoves)
+        document.addEventListener('mousedown', () => { window.mousemovecount = 0 })
+        document.addEventListener('click', () => { window.preventSimMousemove = false })
+    </script>
+
+
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet"> 
+    <title>Reaching your online goals, since 2006 | NETWELL.DIGITAL</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" />   
+
+    <link href="/css/_c-base.css" rel="stylesheet"/>
+    <link href="/css/_c-visual.css" rel="stylesheet"/>
+    <link href="/css/_c.custom.css" rel="stylesheet"/>
+    <link href="/css/_d-base.css" rel="stylesheet"/>
+    <link href="/css/_d-visual.css" rel="stylesheet"/>
+    <link href="/css/_d.custom.css" rel="stylesheet"/>
+    <link href="/css/_images.css" rel="stylesheet" />  
+  
+    <link href="/css/aside.css" rel="stylesheet" />
+    <!--link href="/css/collapsible_table.css" rel="stylesheet" /-->
+    <!--link href="/css/modals.css" rel="stylesheet" /-->
+    <link href="/css/splits.css" rel="stylesheet" />
+    <link href="/css/dnimgonly.css" rel="stylesheet" />
+    <link href="/css/nav-onscroll.css" rel="stylesheet" />
+
+    <meta property="og:description" content="12 years of longterm strategies with informed clients, from entrepreneurs to multinationals. Awesome SEO, PPC, Social Media, App development using Spotlight - our own SEO-oriented platform. xxx">
+    <meta name="description" content="12 years of longterm strategies with informed clients, from entrepreneurs to multinationals. Awesome SEO, PPC, Social Media, App development using Spotlight - our own SEO-oriented platform. xxx">    
+    
+    <style>
+        @font-face {
+            font-family: 'Neue';
+            src: url('/fonts/f.woff2') format('woff2'), url('/fonts/f.woff') format('woff')
+        }
+    </style>
+</head>
+
+<body id="_ndefault" class="_loggedin">
+    <a id="_top"></a>
+    <div id='_modaloverlay'></div>
+
+    <header></header>
+    <nav>
+        <ul id="nav_user">
+            <li><a href="https://github.com/marko-36/spotlightframework">Spotlight Framework</a></li>
+            <li class="_asignup"><a data-modalshowid="_modal-signup">Sign up</a></li>
+            <li class="_alogin"><a data-modalshowid="_modal-login">Log In</a></li>
+            <li class="_alogout"><a data-modalshowid="_modal-logout">Log Out</a></li>   
+            <li class="_auser"><a data-modalshowid="_modal-user">My Account</a></li>                    
+            <li class="_amenu"><a></a></li>
+        </ul>
+        <ul id="nav_main">
+            <li class="_node"><a href="javascript:void(0);">Lorem Ipsum</a>
+                <ul>
+                    <li class="_history-purpose-usage"><a href="/#_history-purpose-usage">History, Purpose and Usage</a></li>
+                    <li class="_origins-and-discovery"><a href="/#_origins-and-discovery">Origins and Discovery</a></li>
+                    <li class="_hedonist-roots"><a href="/#_hedonist-roots">Hedonist Roots</a></li>
+                    <li class="_assorted_philosophers"><a href="/#_assorted_philosophers">Assorted philosophers</a></li>
+                    <li class="_fuzzy-beginnings"><a href="/#_fuzzy-beginnings">Fuzzy Beginnings</a></li>
+                </ul>
+            </li>
+            <li class="_node"><a href="javascript:void(0);">Lorem Ipsum 2</a>
+                <ul>
+                    <li class="_meaning-of-lorem-ipsum"><a href="/#_meaning-of-lorem-ipsum">Meaning of Lorem Ipsum</a></li>
+                    <li class="_usage-and-examples"><a href="/#_usage-and-examples">Usage and Examples</a></li>
+                    <li class="_controversy-in-the-design-world"><a href="/#_controversy-in-the-design-world">Controversy in the Design World</a> </li>
+                </ul>
+            </li>            
+            <li class="_spotlight"><a href="https://github.com/marko-36/spotlightframework">Spotlight framework</a></li>
+            <li class="_contact-us"><a href="https://netwell.digital/">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="_dn"><!--_history-purpose-usage-->
+            <div>
+                <a id="_history-purpose-usage"></a>
+                <h2>History, Purpose and Usage</h2>
+                <p><b class="_bigtext">Lorem ipsum, or lipsum</b> as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book.</p>
+                <p>The purpose of lorem ipsum is to create a natural looking block of text (sentence, paragraph, page, etc.) that doesn't distract from the layout. A practice not without controversy, laying out pages with meaningless filler text can be very useful when the focus is meant to be on design, not content. </p>
+            </div>
+        </div>
+        <div class="_dn"><!--_origins-and-discovery-->
+            <div>            
+                <a id="_origins-and-discovery"></a>
+                <h2>Origins and Discovery</h2>
+                <p>Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text. “It's not Latin, though it looks like it, and it actually says nothing,” <b class="bigtext"></b>Before & After magazine</b> answered a curious reader, “Its ‘words’ loosely approximate the frequency with which letters occur in English, which is why at a glance it looks pretty real.”.&nbsp;;)</p>
+            </div>
+        </div>
+        <div class="_dn"><!--_hedonist-roots-->
+            <a id="_hedonist-roots"></a>            
+            <div>
+                <h2>Hedonist Roots</h2>
+                <p>The placeholder text, beginning with the line “Lorem ipsum dolor sit amet, consectetur adipiscing elit”, looks like Latin because in its youth, centuries ago, it was Latin. </p>
+                <p>Richard McClintock, a Latin scholar from Hampden-Sydney College, is credited with discovering the source behind the ubiquitous filler text. In seeing a sample of lorem ipsum, his interest was piqued by consectetur—a genuine, albeit rare, Latin word. Consulting a Latin dictionary led McClintock to a passage from De Finibus Bonorum et Malorum (“On the Extremes of Good and Evil”), a first-century B.C. text from the Roman philosopher Cicero.</p>
+            </div>
+        </div>
+        <div class="_dn">
+            <div class="imgonly">
+                <img src="/media/natalia-y-f5xddISq428-unsplash.jpg" width="100%" alt="natalia-y-f5xddISq428-unsplash" />
+            </div>
+        </div>
+        <div class="_dn"><!--_assorted_philosophers-->
+            <div>
+                <a id="_assorted_philosophers"></a>
+                <h2>Assorted Philosophers</h2>
+            </div>
+            <div class="_split-2">      
+                <div>
+                    <ul>
+                        <li>Aeschines of Neapolis</li>
+                        <li>Bernard of Clairvaux</li>
+                        <li>Cassius Longinus</li>
+                        <li>Diogenes of Babylon</li>
+                        <li>Elisabeth of Bohemia</li>
+                        <li>Francis of Meyronnes</li>
+                        <li>Gaius the Platonist</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li>Heraclides Ponticus</li>
+                        <li>Isocrates</li>
+                        <li>John of Salisbury</li>
+                        <li>Karl Kautsky</li>
+                        <li>Leopold Kronecker</li>
+                        <li>Metrodorus of Athens</li>
+                        <li>Numenius of Apamea</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="_split-3">                              
+                <div>
+                    <ul>
+                        <li>Oenomaus of Gadara</li>
+                        <li>Peregrinus Proteus</li>
+                        <li>Qutb al-Rahim</li>
+                        <li>Ramakrishna Paramhansa</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>                        
+                        <li>Slavoj Žižek</li>
+                        <li>Thomas Reid</li>
+                        <li>Ulrich of Strasbourg</li>
+                        <li>Valentin Voloshinov</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>                        
+                        <li>William of Auxerre</li>
+                        <li>Xenophanes of Colophon</li>
+                        <li>Yang Chu</li>
+                        <li>Zeno of Sidon</li>
+                    </ul>
+                </div>                        
+            </div>
+        </div>
+        <div class="_dn"><!--_fuzzy-beginnings-->
+            <div>
+                <a id="_fuzzy-beginnings"></a>
+                <h2>Meaning of Lorem Ipsum</h2>
+                <p><img class="bordered" src="/media/alex-block-PdDBTrkGYLo-unsplash.jpg" alt="alex-block-PdDBTrkGYLo-unsplash" width="756" height="242"></p>
+            </div>
+        </div>
+        <div class="_dn"><!--_meaning-of-lorem-ipsum-->
+            <div>
+                <a id="_meaning-of-lorem-ipsum"></a>
+                <h2>Meaning of Lorem Ipsum</h2>
+                <p>Lorem ipsum was purposefully designed to have no meaning, but appear like real text, making it the perfect placeholder.</p>
+                <p>Don't bother typing “lorem ipsum” into Google translate. If you already tried, you may have gotten anything from "NATO" to "China", depending on how you capitalized the letters. The bizarre translation was fodder for conspiracy theories, but Google has since updated its “lorem ipsum” translation to, boringly enough, “lorem ipsum”. </p>
+                <p>One brave soul did take a stab at translating the almost-not-quite-Latin. According to The Guardian, Jaspreet Singh Boparai undertook the challenge with the goal of making the text “precisely as incoherent in English as it is in Latin - and to make it incoherent in the same way”. As a result, “the Greek 'eu' in Latin became the French 'bien' [...] and the '-ing' ending in 'lorem ipsum' seemed best rendered by an '-iendum' in English.” </p>
+            </div>
+        </div>
+        <div class="_dn"><!--_usage-and-examples-->
+            <div>
+                <a id="_usage-and-examples"></a>
+                <h2>Usage and examples</h2>
+                <p>The decade that brought us Star Trek and Doctor Who also resurrected Cicero—or at least what used to be Cicero—in an attempt to make the days before computerized design a little less painstaking.</p>
+                <p>The French lettering company Letraset manufactured a set of dry-transfer sheets which included the lorem ipsum filler text in a variety of fonts, sizes, and layouts. These sheets of lettering could be rubbed on anywhere and were quickly adopted by graphic artists, printers, architects, and advertisers for their professional look and ease of use.</p>
+                <p>Aldus Corporation, which later merged with Adobe Systems, ushered lorem ipsum into the information age with its desktop publishing software Aldus PageMaker. The program came bundled with lorem ipsum dummy text for laying out page content, and other word processors like Microsoft Word followed suit. More recently the growth of web design has helped proliferate lorem ipsum across the internet as a placeholder for future text—and in some cases the final content (this is why we proofread, kids).</p>
+            </div>
+        </div>
+        <div class="_dn"><!--_controversy-in-the-design-world-->
+            <div>
+                <a id="_controversy-in-the-design-world"></a>
+                <h2>Controversy in the design world</h2>
+                <p>Some claim lorem ipsum threatens to promote design over content, while others defend its value in the process of planning.</p>
+                <p>Among design professionals, there's a bit of controversy surrounding the filler text. Controversy, as in Death to Lorem Ipsum. </p>
+                <p>The strength of lorem ipsum is its weakness: it doesn't communicate. To some, designing a website around placeholder text is unacceptable, akin to sewing a custom suit without taking measurements. Kristina Halvorson notes:
+                <br>“I’ve heard the argument that “lorem ipsum” is effective in wireframing or design because it helps people focus on the actual layout, or color scheme, or whatever. What kills me here is that we’re talking about creating a user experience that will (whether we like it or not) be DRIVEN by words. The entire structure of the page or app flow is FOR THE WORDS.” </p>
+
+            </div>
+        </div>             
+        <!--aside>
+            <div id="_asidecon">
+                <div>
+                    <h4><span>Share:</span></h4>
+                    <div class="_addthisbox">
+                        <div class="addthis_inline_share_toolbox"></div>
+                    </div>
+                    <h4><span>Like & Follow:</span></h4>
+                    <div class="_likefollow"></div>
+                </div>
+            </div>
+        </aside-->
+    </main>
+    <footer>
+        <div>© 2006 - 2022 Niterane, s.r.o.<br /></div>
+    </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="/js/core.js"></script>
+    <!--script src="/js/modals.js"></script-->
+</body>
+</html>

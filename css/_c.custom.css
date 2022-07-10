@@ -1,11 +1,18 @@
 /*C-mobile MAIN 2-custom https://github.com/marko-36/spotlightframework/wiki/Core-layout,-code-structure,-classes-IDs */
 @media (max-width:1057px) {
-    .bigtext{background:#ED1C24;color:#fff;padding:0 5px 0 4px;font-size:1.25rem;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+    .bigtext{font-weight:normal;background:#ED1C24;color:#fff;padding:0 5px 0 4px;font-size:1.25rem;box-decoration-break:clone;-webkit-box-decoration-break:clone}
     a.bigtext:hover{background:#fff;color:#000;transition:0.15s ease}
 
     ._dn:nth-child(2n+1) > div {background: rgba(255,255,255,.75);}
     ._dn:nth-child(1) > div {min-height: 23rem;padding-top: 3rem;}
     h1, .h1, h2, .h2, h3, .h3, h4, .h4,p{margin:0}
-    .h1, .h2{font-size: 2.75rem; line-height: 2.75rem; color: #ED1C24}
+    .h1, .h2{font-size: 2.75rem; line-height: 2.75rem; color: #ED1C24; padding: 2rem 0 .25rem;}
     main>div p,main>div ul,table{margin-top:.5rem}
+    .quoted{background-position:right bottom,left top;background-size:2rem;padding:0 3rem 1rem 3rem;font-style:italic}
+    .quoted span:last-of-type{text-align:right;display:block;font-style:normal;font-size:.875rem}
+    .smalllink{font-size:1rem;color:#555}
+    #_gamingbrands > div { width: 120px;margin: 1rem 2% 0 0}
+    tr:not(:hover) td.green, span.green{background-color:#9e9}
+    div.mapembed,div.mapembed>div{padding:0;line-height:0;height:25rem}
+    div.mapembed>div{padding:0;line-height:0;height:25rem}
 }
